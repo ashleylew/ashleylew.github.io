@@ -153,6 +153,30 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+/* ===== Announcement Bar ===== */
+.announcement-bar {
+    background: linear-gradient(135deg, var(--peach-light) 0%, var(--beige-dark) 100%);
+    border-bottom: 1px solid var(--peach-light);
+    text-align: center;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    position: sticky;
+    top: 57px;
+    z-index: 999;
+}
+
+.announcement-bar a {
+    font-weight: 600;
+    color: var(--peach-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.announcement-bar a:hover {
+    color: var(--text-primary);
+}
+
 /* ===== Hero Section ===== */
 .hero {
     padding: 160px 24px 100px;
