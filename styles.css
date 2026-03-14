@@ -265,16 +265,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Hero Email ===== */
-.hero-email::before {
-    content: attr(data-user) "\40" attr(data-domain);
-    display: inline-block;
-    padding: 14px 28px;
-    background: linear-gradient(135deg, var(--peach) 0%, var(--peach-dark) 100%);
-    color: var(--white);
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 1rem;
-    box-shadow: 0 4px 14px rgba(232, 168, 124, 0.4);
+.hero-email-line {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
 }
 
 .obfuscated-email::before {
