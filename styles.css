@@ -153,30 +153,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* ===== Announcement Bar ===== */
-.announcement-bar {
-    background: linear-gradient(135deg, var(--peach-light) 0%, var(--beige-dark) 100%);
-    border-bottom: 1px solid var(--peach-light);
-    text-align: center;
-    padding: 10px 24px;
-    font-size: 0.95rem;
-    color: var(--text-secondary);
-    position: sticky;
-    top: 57px;
-    z-index: 999;
-}
-
-.announcement-bar a {
-    font-weight: 600;
-    color: var(--peach-dark);
-    text-decoration: underline;
-    text-underline-offset: 3px;
-}
-
-.announcement-bar a:hover {
-    color: var(--text-primary);
-}
-
 /* ===== Hero Section ===== */
 .hero {
     padding: 160px 24px 100px;
@@ -286,6 +262,46 @@ h1, h2, h3, h4, h5, h6 {
 
 #about p:last-child {
     margin-bottom: 0;
+}
+
+/* ===== Hero Email ===== */
+.hero-email::before {
+    content: attr(data-user) "\40" attr(data-domain);
+    display: inline-block;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, var(--peach) 0%, var(--peach-dark) 100%);
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    box-shadow: 0 4px 14px rgba(232, 168, 124, 0.4);
+}
+
+.obfuscated-email::before {
+    content: attr(data-user) "\40" attr(data-domain);
+}
+
+/* ===== Paper Highlight ===== */
+.paper-highlight {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--peach-light) 0%, var(--beige-dark) 100%);
+    border-left: 3px solid var(--peach);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+
+.paper-highlight a {
+    font-weight: 600;
+    color: var(--peach-dark);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.paper-highlight a:hover {
+    color: var(--text-primary);
 }
 
 /* ===== Research Section ===== */
